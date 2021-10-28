@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Irish+Grover&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Mi promediador</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="heading-primary">Mi promediador</h1>
+
+        <div class="box box-one">
+            <div class="form-box" id="form-box--1">
+                <label for="materias">¿Cuantas materias vas a promediar?</label>    
+                <input type="number" name="materias" value='' id="materias">
+                <button class="btn btn--mat" id="btn-materias">Listo</button>            
+            </div>
+
+            <div class="ready-box" id="ready-box--1">
+                <ion-icon name="checkmark-circle-outline" class="icon"></ion-icon>
+            </div>
+        </div>
+
+        <div class="box box-two">
+            <div class="form-box" id="form-box--2">
+                <label for="valores">Introduce las materias</label>    
+                <input type="number" name="valores" value='' id="valores">
+                <button class="btn btn--value" id="btn-valores">Siguiente</button>
+            </div>
+
+            <div class="ready-box" id="ready-box--2">
+                <ion-icon name="checkmark-circle-outline" class="icon"></ion-icon>
+            </div>
+        </div>
+
+        <button class="btn btn--result" id="btn-mostrar">Mostrar resultado</button>
+        <div class="box box--result"><p class="result" id="result">Resultado</p></div>
+
+        <button class="btn btn--cancel" id="btn-cancelar">Cancelar</button>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>    
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script src="main.js"></script>
+</body>
+</html>
